@@ -19,4 +19,4 @@ Route::get('foo', function () {
     return 'Hello World';
 });
 
-Route::get('/index', 'Controller@index');
+Route::get('/index', 'PatientController@patient_index');
