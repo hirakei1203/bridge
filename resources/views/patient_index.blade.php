@@ -1,9 +1,12 @@
 @extends('common.layout')
 
 
-@section('index')
+@section('content')
 Hello php world!
 
-<button>Bootstrap</button>
+<button type="button" class="btn btn-primary">Bootstrap</button>
+
+
+
 
 @endsection
