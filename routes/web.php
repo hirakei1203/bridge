@@ -12,7 +12,7 @@
 */
 
 
-Route::get('/index', 'UserController@patient_index');
+Route::get('/', 'UserController@patient_index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
