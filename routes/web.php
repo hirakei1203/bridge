@@ -11,12 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('foo', function () {
-    return 'Hello World';
-});
+Route::get('/index', 'UserController@patient_index');
+Auth::routes();
 
-Route::get('/index', 'PatientController@patient_index');
+Route::get('/home', 'HomeController@index')->name('home');

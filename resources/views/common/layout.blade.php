@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>@yield('title')</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!-- <bootstrapの呼び出し> -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="/css/sticky-footer.css" rel="stylesheet" media="screen">
 
@@ -11,11 +12,10 @@
   <script src="js/common.js" type="text/javascript"></script>
   </head>
 
-  <body>
-  @yield('content')
-  </body>
+    <body>
+    @yield('content')
+    </body>
 
 </html>
 
 
-<!-- cssの呼び出し -->
