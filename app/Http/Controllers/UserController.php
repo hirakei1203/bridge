@@ -11,8 +11,8 @@ class UserController extends Controller
     return view('home');
   }
 
-  public function patient_index(){
-    return view('patient_index');
+  public function index(){
+    return view('index');
   }
 
 
