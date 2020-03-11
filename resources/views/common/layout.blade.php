@@ -19,7 +19,7 @@
      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
     </nav>
 
-    <div class="container-fluid side-bar">
+    <div class="container-fluid side-bar col-4">
       <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
