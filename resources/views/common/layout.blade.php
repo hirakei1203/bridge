@@ -5,8 +5,8 @@
   <title>@yield('title')</title>
 
   <!-- css,scssの呼び出し -->
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
-  <!-- <bootstrapの呼び出し> -->
+  <link href='{{ "mix(css/app.css?<?php echo date('Ymd-Hi'); ?>)" }}' rel="stylesheet" type="text/css">
+   <!-- <bootstrapの呼び出し> -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
   <!-- jsファイルの呼び出し -->
