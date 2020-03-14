@@ -10886,8 +10886,8 @@ a.text-dark:focus {
 
 .side-bar {
   height: 100%;
-  font-size: 18px;
-  max-width: 0%;
+  font-size: 24px;
   margin: 0;
+  color: green;
 }
 

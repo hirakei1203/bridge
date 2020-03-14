@@ -5,7 +5,7 @@
   <title>@yield('title')</title>
 
   <!-- css,scssの呼び出し -->
-  <link href='{{ "mix(css/app.css?<?php echo date('Ymd-Hi'); ?>)" }}' rel="stylesheet" type="text/css">
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
    <!-- <bootstrapの呼び出し> -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
@@ -19,8 +19,8 @@
      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
     </nav>
 
-    <div class="container-fluid side-bar col-4">
-      <div class="row">
+    <div class="container-fluidcol-4">
+      <div class="row side-bar">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
