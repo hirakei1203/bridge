@@ -5,6 +5,7 @@
 
 <div class="registration-container">
 
+    
  
     <div class="each-registration-container">
       <a href="#">

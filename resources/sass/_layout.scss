@@ -4,17 +4,30 @@
   font-size: 0;
 }
 
+// 以下navbarに関する記述-------------------------------
 
 #top-navbar-og{
   margin-bottom: 0px;
   border-radius: 0px;
   display: block;
+  position: fixed;
 }
 
 .navbar .navbar-title{
   font-size: 28px;
   display:inline-block;
 }
+
+.navbar-button{
+  font-size: 24px;
+  text-decoration: none;
+  float: right;
+  padding: 15px 15px;
+  line-height: 20px;
+  color: white;
+}
+
+// 以下article_sidebarに関する記述-----------------------
 
 .article{
 }

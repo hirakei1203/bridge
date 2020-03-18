@@ -11233,6 +11233,15 @@ template {
   display: inline-block;
 }
 
+.navbar-button {
+  font-size: 28px;
+  text-decoration: none;
+  float: right;
+  padding: 15px 15px;
+  line-height: 20px;
+  color: white;
+}
+
 .side-bar {
   display: inline-block;
   width: 20%;

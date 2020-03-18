@@ -16,8 +16,10 @@
     <body>
     
     <div class="main-body">
-      <nav id="top-navbar-og" class="navbar navbar-dark bg-danger text-white fixed-top flex-md-nowrap shadow">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0 navbar-title" href="#">Bridge</a>
+        <nav id="top-navbar-og" class="navbar navbar-dark bg-danger text-white fixed-top flex-md-nowrap shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0 navbar-title" href="#">Bridge</a>
+        <a class="login-button navbar-button" href="{{ url('login') }}">login</a>
+        <a class="registration-button navbar-button" href="{{ url('register') }}">Register</a>
       </nav>
 
       <div class="article">
