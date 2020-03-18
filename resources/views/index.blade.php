@@ -14,7 +14,6 @@
       </a>
     </div>
   
-
     <div class="each-registration-container">
     <a href="#">
       <div class="index-message">For Patient</div>
