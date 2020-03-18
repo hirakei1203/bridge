@@ -11263,17 +11263,40 @@ template {
 
 .registration-container {
   height: 100vh;
-  width: 120vh;
+  width: 60vh;
   background-color: lightblue;
   display: flex;
 }
 
 .registration-container .regi-content {
   height: 50vh;
-  width: 120vh;
+  width: 60vh;
   z-index: 0.1;
   font-size: 28px;
-  background-color: green;
+}
+
+.registration-container .each-registration-container {
+  margin-top: 3vh;
   margin-left: 3vh;
+  height: 50vh;
+  width: 60vh;
+}
+
+.registration-container .index-message {
+  font-size: 18px;
+  text-decoration: none;
+  color: navy;
+}
+
+.registration-container .dentist-registration {
+  background-image: url(/images/img3.jpg?d9300661e6e1abe1498e07206a807116);
+  background-position: left bottom;
+  background-size: cover;
+}
+
+.registration-container .patient-registration {
+  background-image: url(/images/img2.jpg?786cebe4624e6e4f6488edc70c515e43);
+  background-position: center bottom;
+  background-size: cover;
 }
 
