@@ -11,7 +11,24 @@
   display: inline-block;
   margin-left: 15px;
   display: flex;  
+  }
+}
 
-
+.registration-container{
+  height: 60rem;
+  width: 60rem;
+  background-color: lightblue;
+  display:flex;
+  .regi-content{
+    height: 30rem;
+    width: 30rem;
+    z-index: 0.1;
+    font-size: 28px;
+  }
+  .dentist-registrarion{
+    background-color: lightyellow;
+  }
+  .patient-registration{
+    background-color: lightgreen;
   }
 }

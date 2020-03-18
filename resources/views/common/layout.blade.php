@@ -62,7 +62,9 @@
           </div>
         </div>  
       
-        @yield('content')
+        <div class="row article-main">
+         @yield('content')
+        </div>
 
       </div>
     </div>
