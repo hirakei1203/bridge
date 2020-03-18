@@ -3,7 +3,10 @@
 
 @section('content')
 
-<div class="greeen">all green</div>
+<div class="row article-main">
+  <div class="dentist-registration">
+  </div>
+</div>
 
 
 

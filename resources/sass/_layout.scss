@@ -1,6 +1,14 @@
-.navbar .top-navbar-original{
+
+.main-body{
+  // inline-boxの隙間対策にfontsizeを0にしているので都度fontsizeの記述をしないと反映されません
+  font-size: 0;
+}
+
+
+#top-navbar-og{
   margin-bottom: 0px;
   border-radius: 0px;
+  display: block;
 }
 
 .navbar .navbar-title{
@@ -8,9 +16,13 @@
   display:inline-block;
 }
 
+.article{
+}
+
 .side-bar{
  display: inline-block;
- width: 25%;
+ width: 20%;
+ float: left;
 }
 
 .side-bar-content{

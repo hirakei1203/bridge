@@ -11218,9 +11218,14 @@ template {
   display: none !important;
 }
 
-.navbar .top-navbar-original {
+.main-body {
+  font-size: 0;
+}
+
+#top-navbar-og {
   margin-bottom: 0px;
   border-radius: 0px;
+  display: block;
 }
 
 .navbar .navbar-title {
@@ -11231,6 +11236,7 @@ template {
 .side-bar {
   display: inline-block;
   width: 25%;
+  float: left;
 }
 
 .side-bar-content {
@@ -11246,5 +11252,20 @@ template {
   width: 200px;
   background-color: green;
   display: inline-block;
+}
+
+.article .article-main {
+  background-color: lightblue;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.article .article-main .article-sentense {
+  font-size: 40px;
+  color: white;
+}
+
+.article .article-main .dummy-tag {
+  font-size: 24px;
 }
 
