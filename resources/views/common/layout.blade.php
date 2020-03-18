@@ -19,9 +19,9 @@
      <a class="navbar-brand col-sm-3 col-md-2 mr-0 navbar-title" href="#">Bridge</a>
     </nav>
 
-    <div class="container-fluidcol-4">
-      <div class="row side-bar">
-        <nav class="col-md-6 d-none d-md-block bg-light sidebar">
+    <div class="container-fluidcol-4 side-bar">
+      <div class="row side-bar-content">
+        <nav class="col-md-12 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -57,8 +57,8 @@
             </ul>
           </div>
         </nav>   
-       </div>
-      </div>  
+      </div>
+    </div>  
 
     @yield('content')
     </body>
