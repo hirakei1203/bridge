@@ -10884,8 +10884,19 @@ a.text-dark:focus {
   }
 }
 
+.navbar .top-navbar-original {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.navbar .navbar-title {
+  font-size: 28px;
+  display: inline-block;
+}
+
 .side-bar {
   height: 100%;
+  width: 33%;
   font-size: 24px;
   margin: 0;
   color: green;

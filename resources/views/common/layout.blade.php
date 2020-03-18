@@ -15,13 +15,13 @@
 
     <body>
 
-    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-     <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
+    <nav class="navbar navbar-dark bg-danger text-white fixed-top flex-md-nowrap shadow top-navbar-original">
+     <a class="navbar-brand col-sm-3 col-md-2 mr-0 navbar-title" href="#">Bridge</a>
     </nav>
 
     <div class="container-fluidcol-4">
       <div class="row side-bar">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <nav class="col-md-6 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
