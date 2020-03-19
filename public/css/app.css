@@ -11261,6 +11261,10 @@ template {
   margin: 0;
 }
 
+.new-registration-container {
+  padding-top: 100px;
+}
+
 .greeen {
   height: 200px;
   width: 200px;
