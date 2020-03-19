@@ -15,7 +15,14 @@ class UserController extends Controller
     return view('index');
   }
 
+  public function mypatient(){
 
+    // 作成予定
+    // $mypatients = User::where('dentisit_id = current_user.id')->orderby('latest_treatment_date', 'DESC')->get();
+    // return view('index', compact('mypatients'));
+
+    return view('mypatient');
+  }
 
 }
 
