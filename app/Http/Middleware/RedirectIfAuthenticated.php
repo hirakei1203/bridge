@@ -20,6 +20,8 @@ class RedirectIfAuthenticated
     {
         if (Auth::guard($guard)->check()) {
             return redirect(RouteServiceProvider::HOME);
+            // 認証後のリダイレクト先の変更
+            // return redirect('/');
         }
 
         return $next($request);

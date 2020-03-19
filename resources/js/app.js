@@ -1,3 +1,5 @@
+
+
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -30,3 +32,13 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
+
+// aタグをPOST通信に変えるための記述
+// function sendPost(event) {
+//     event.preventDefault();
+//     var form = document.createElement('form');
+//     form.action = event.target.href;
+//     form.method = 'post';
+//     document.body.appendChild(form);
+//     form.submit();
+//   }

@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('common.layout')
 
-@section('content')
-<div class="container">
+@section('template_content')
+<div class="container new-registration-container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

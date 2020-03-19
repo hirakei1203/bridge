@@ -10,8 +10,9 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
   <!-- jsファイルの呼び出し -->
-  <!-- <script src="js/common.js" type="text/javascript"></script> -->
-  </head>
+  <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
+  
+</head>
 
     <body>
     
@@ -19,6 +20,11 @@
         <nav id="top-navbar-og" class="navbar navbar-dark bg-danger text-white fixed-top flex-md-nowrap shadow">
         <a class="navbar-brand col-sm-3 col-md-2 mr-0 navbar-title" href="{{ url('/') }}">Bridge</a>
         <a class="login-button navbar-button" href="{{ url('login') }}">login</a>
+        <form method="POST" action="logout">
+          @csrf
+          <a href="javascript:void(0)" onclick="this.parentNode.submit()" class="navbar-button">logout</a>
+        </form>
+        <!-- <a href="/logout" onclick="sendPost(event)" class="navbar-button">Logout</a> -->
         <a class="registration-button navbar-button" href="{{ url('register') }}">Register</a>
       </nav>
 
