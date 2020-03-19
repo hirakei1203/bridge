@@ -32,8 +32,8 @@
                                 <!-- <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="role" value="{{ old('role') }}" required autocomplete="name" autofocus> -->
                                 <!-- <label for="exampleFormControlSelect1">Example select</label> -->
                                 <select id="name" type="text" class="form-control @error('name') is-invalid @enderror" id="exampleFormControlSelect1" name="role" value="{{ old('role') }}">
-                                    <option>Dentist</option>
-                                    <option>Patinet</option>
+                                    <option value="1">Dentist</option>
+                                    <option value="2">Patinet</option>
                                 </select>
 
                                 @error('role')
