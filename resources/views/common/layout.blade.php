@@ -64,12 +64,13 @@
           </div>
         </div>  
       
-        <div class="row article-main">
+        
          @yield('content')
-        </div>
-
+        
       </div>
     </div>
+
+    @yield('template_content')
     </body>
 
 </html>

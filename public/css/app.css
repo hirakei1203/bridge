@@ -11226,6 +11226,7 @@ template {
   margin-bottom: 0px;
   border-radius: 0px;
   display: block;
+  position: fixed;
 }
 
 .navbar .navbar-title {
@@ -11234,7 +11235,7 @@ template {
 }
 
 .navbar-button {
-  font-size: 28px;
+  font-size: 24px;
   text-decoration: none;
   float: right;
   padding: 15px 15px;
@@ -11244,8 +11245,12 @@ template {
 
 .side-bar {
   display: inline-block;
+  height: 100%;
   width: 20%;
   float: left;
+  margin-top: 62px;
+  position: fixed;
+  z-index: 1;
 }
 
 .side-bar-content {
@@ -11268,10 +11273,49 @@ template {
   display: inline-block;
   padding-left: 15px;
   display: flex;
+  margin-left: 20%;
+  padding-top: 62px;
+}
+
+.entrance-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/images/entrance-image.jpg?2b95fdeacdd453199702b89693f569fc);
+  background-color: rgba(255, 255, 255, 0.5);
+  background-size: cover;
+  background-position: center top;
+  background-blend-mode: lighten;
+}
+
+.entrance-container .entrance-title h2 {
+  font-size: 72px;
+  margin: 100px auto;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: navy;
+}
+
+.entrance-container .entrance-message {
+  font-size: 48px;
+  text-align: left;
+  color: navy;
+  margin: 0 15%;
+}
+
+.registration-sign {
+  display: inline-block;
+  width: 140vh;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.registration-sign .registration-message {
+  font-size: 28px;
 }
 
 .registration-container {
-  height: 100vh;
+  height: 80vh;
   width: 60vh;
   background-color: lightblue;
   display: flex;
