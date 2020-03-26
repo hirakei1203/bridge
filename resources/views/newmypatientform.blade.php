@@ -5,6 +5,8 @@
 <div class="new-patient__create-wrapper">
   <div class="new-patient__research-box">
     <h3>検索する</h3>
+    <input class="new-patient__serach-box" type="text" placeholder="患者名を検索">
+    <div class="new-patient__serach-box__display"></div>
   </div>
 
   <div class="new-patient__create-box">
