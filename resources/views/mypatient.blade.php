@@ -5,9 +5,10 @@
 
 <!-- のちの繰り返し構文用 -->
 <!-- foreach mypatients as mypatinet  -->
-  <div class="mypatient-container">
-    <div class="mypatient-image-box">
-      <img src="../../public/images/img1.css" class="mypatient-image">
+  <div class="mypatient-wrapper">
+    <div class="mypatient-wrapper__image-box">
+      <div class="mypatient-wrapper__image-box__circle">
+      </div>
     </div>
     <div class="mypatient-name-box">
       <h4 class="mypatient-name">Patient's name: Mickeal Jackson</h4>
