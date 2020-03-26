@@ -14,8 +14,13 @@
 
 Route::get('/', 'UserController@index');
 Route::get('/mypatient', 'UserController@mypatient');
-Route::get('/newmypatient', 'UserController@newmypatient');
+Route::get('/mypatient/new', 'UserController@newmypatient');
 
 Auth::routes();
+
+Route::group(['middleware'=>'auth'], function(){
+  Route::post('/mypatinet/create');
+});
+
 
 Route::get('/home', 'HomeController@index')->name('home');

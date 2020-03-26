@@ -47,7 +47,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ url('mypatient') }}">
+                    <a class="nav-link" href="{{ url('mypatient/new') }}">
                       <span data-feather="file"></span>
                       Registration of new patient!
                     </a>
