@@ -19,7 +19,7 @@ Route::get('/mypatient/new', 'UserController@newmypatient');
 Auth::routes();
 
 Route::group(['middleware'=>'auth'], function(){
-  Route::post('/mypatinet/create');
+  Route::post('/mypatinet/create', 'UserController@mypatientCreate')->name('mypatient_create');
 });
 
 

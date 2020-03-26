@@ -11399,3 +11399,9 @@ template {
   padding-left: 40px;
 }
 
+.new-patient__create-wrapper {
+  font-size: 28px;
+  padding-top: 72px;
+  padding-left: 25%;
+}
+

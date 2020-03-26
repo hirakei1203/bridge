@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\User;
+use App\Patinet;
 
 class UserController extends Controller
 {
@@ -27,6 +28,18 @@ class UserController extends Controller
   public function newmypatient(){
     return view('newmypatientform');
   }
+  
+  public function patientCreate(Request $request){
+    $post = $request->all();
+    dd($post);
+
+    // 作成予定
+    // $data = ['u']
+    // Patient::insert($sata);
+    
+    return redirect('mypatientform');
+  }
+
 }
 
 ?>
