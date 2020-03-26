@@ -47,6 +47,12 @@
                     </a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="{{ url('mypatient') }}">
+                      <span data-feather="file"></span>
+                      Registration of new patient!
+                    </a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="#">
                       <span data-feather="shopping-cart"></span>
                       My dentists

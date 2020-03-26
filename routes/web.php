@@ -14,6 +14,7 @@
 
 Route::get('/', 'UserController@index');
 Route::get('/mypatient', 'UserController@mypatient');
+Route::get('/newmypatient', 'UserController@newmypatient');
 
 Auth::routes();
 

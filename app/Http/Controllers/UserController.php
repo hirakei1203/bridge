@@ -24,6 +24,9 @@ class UserController extends Controller
     return view('mypatient');
   }
 
+  public function newmypatient(){
+    return view('newmypatientform');
+  }
 }
 
 ?>

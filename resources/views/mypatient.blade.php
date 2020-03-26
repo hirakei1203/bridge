@@ -6,6 +6,11 @@
 <!-- のちの繰り返し構文用 -->
 <!-- foreach mypatients as mypatinet  -->
 <div class="mypatients-container">
+    <!-- 本部分には不要？サイドバーで十分な可能性あり -->
+    <!-- <div class="mypatients-container__link-box">
+      <a class="mypatients-container__link-box__link" href="{{ url('mypatient') }}">Registaration of new patient</a>
+    </div> -->
+
     <div class="mypatient-wrapper">
       <div class="mypatient-wrapper__image-box">
         <div class="mypatient-wrapper__image-box__circle">
