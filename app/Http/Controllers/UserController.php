@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use App\User;
-use App\Patinet;
+use App\Patient;
+// use App\Http\Requests\Request;
 
 class UserController extends Controller
 {
@@ -29,15 +31,15 @@ class UserController extends Controller
     return view('newmypatientform');
   }
   
-  public function patientCreate(Request $request){
+  public function mypatientCreate(Request $request){
     $post = $request->all();
-    dd($post);
+    // dd($post);
 
-    // 作成予定
-    // $data = ['u']
-    // Patient::insert($sata);
+    // $data = ['user_id' => \Auth::id(), 'title' => $post['title'], 'body' => $post['body']];
+    $data = ['user_id' => \Auth::id(), 'name' => $post['name'], 'age' => $post['age'], 'sympton' => $post['sympthon'], 'image' => $post['image']];    
+    Patient::insert($data);
     
-    return redirect('mypatientform');
+    return redirect('mypatient');
   }
 
 }
