@@ -1,15 +1,38 @@
-.mypatient-wrapper{
-  font-size: 28px;
-  padding-top: 70px;
-  margin-left: 23%;
-  &__image-box{
-    &__circle{
-      background-image: url(icon_dummy.jpg);
-      height: 75px;
-      width: 75px;
-      border-radius: 50%;
-      background-position: center center;
-      background-size: cover;
+  .mypatients-container{
+    padding-top: 90px;
+  }
+
+  .mypatient-wrapper{
+    font-size: 28px;
+    padding-top: 10px;
+    margin-left: 25%;
+    display: flex;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 10px;
+    width: 70%;
+    padding: 25px;
+    &__image-box{
+      &__circle{
+        background-image: url(icon_dummy.jpg);
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+    &__name-box{
+      padding-left: 20px;
+    }
+    &__info-box{
+      padding-left: 20px;
+      width: 200px;
+    }
+    &__date-box{
+      padding-left: 20px;
+      width: 200px;
+    }
+    &__message-box{
+      padding-left: 40px;
     }
   }
-}
