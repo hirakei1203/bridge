@@ -36,7 +36,6 @@ class UserController extends Controller
     // dd($post);
 
     $request->file('image')->store('/public/images');
-    
     // 以下のuser_idはログインユーザーのidではなく、userテーブルにおける新規idが必要
     // ログインユーザーのidは、ユーザーidから歯科医idを特定し、中間テーブルにログインユーザーと本患者のidを結ぶつける必要がある
     $data = ['user_id' => \Auth::id(), 'name' => $post['name'], 'age' => $post['age'], 'sympton' => $post['sympthon'], 'image' => $request->file('image')->hashName()];    

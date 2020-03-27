@@ -38,10 +38,10 @@ class User extends Authenticatable
     ];
 
     public function patients(){
-        return $this->hasMany('App\patients');
+        return $this->hasMany('App\Patient');
     }
 
     public function dentists(){
-        return $this->hasMany('App\dentists');
+        return $this->hasMany('App\Dentist');
     }
 }

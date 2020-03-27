@@ -11,4 +11,12 @@ class Dentist extends Model
         return $this->belongsTo('App\User');
     }
     
+    public function roles()
+    {
+        return $this->belongsToMany('App\Role');
+    }
+
+    public function patient(){
+        return $this->belongsToMany('App\Dentist');
+    }
 }
