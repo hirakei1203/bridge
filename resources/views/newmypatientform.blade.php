@@ -28,7 +28,7 @@
     <div class="new-patient__create-box__image">
       <div class="form-group">
         <label>顔写真</label>
-        <input type="text" class="form-control" name="image" placeholder="患者名を入力">
+        <input type="file" id="file1" name='image' class="form-control-file">
       </div>
     </div>
     <div class="new-patient__create-box__sympthon">
