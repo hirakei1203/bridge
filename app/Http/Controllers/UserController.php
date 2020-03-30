@@ -48,7 +48,7 @@ class UserController extends Controller
     Patient::insert($patient_data);
 
     // dentist_patientテーブル（中間テーブル）への保存
-    $relation_data = ['^]']
+    $relation_data = ['id' = 
 
     return redirect('mypatient');
   }
