@@ -44,13 +44,12 @@ class UserController extends Controller
     User::insert($user_data);
 
     // patientテーブルへの保存
-    $count_user_table = User::orderby('created_at', 'desc')->first()->id;
-    // $count_user_table = $user->id();
+    $count_user_table = User::orderby('id', 'desc')->first()->id;
     $patient_data = ['user_id' => $count_user_table, 'name' => $post['name'], 'age' => $post['age'], 'sympton' => $post['sympthon'], 'image' => $request->file('image')->hashName()];    
     Patient::insert($patient_data);
 
     // dentist_patientテーブル（中間テーブル）への保存
-    $new_Patient_id = Patient::last()->id();
+    $new_Patient_id = Patient::orderby('id', 'desc')->first()->id;
     $relation_data = ['dentist_id' => \Auth::id(), 'patient_id' => $new_Patient_id];
 
     return redirect('mypatient');
