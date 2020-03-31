@@ -34,12 +34,9 @@ class UserController extends Controller
   
   public function mypatientCreate(Request $request){
     $post = $request->all();
-    // dd($post);
-
+  
     $request->file('image')->store('/public/images');
-    // 以下のuser_idはログインユーザーのidではなく、userテーブルにおける新規idが必要
-    // ログインユーザーのidは、ユーザーidから歯科医idを特定し、中間テーブルにログインユーザーと本患者のidを結ぶつける必要がある
-    
+  
     // userテーブルへの保存
     $user_data = ['name' => $post['name'], 'email' => "{$post['name']}.sample@gmail.com", 'role' => '2', 'password' => 'notauthorized', 'created_at' => now(), 'updated_at' => now()];
     User::insert($user_data);
@@ -52,11 +49,9 @@ class UserController extends Controller
     // dentist_patientテーブル（中間テーブル）への保存
     $new_patient = Patient::orderby('id', 'desc')->first();
     $current_dentist = Dentist::where('user_id', \Auth::id())->first();
-    // $relation_data = ['dentist_id' => \Auth::id(), 'patient_id' => $new_Patient_id];
     $current_dentist->patient()->attach(['patient_id' => $new_patient->id], 
                                     ['dentist_id' => $current_dentist->id]);
     
-
     return redirect('mypatient');
   }
 
