@@ -40,15 +40,18 @@ class UserController extends Controller
     // ログインユーザーのidは、ユーザーidから歯科医idを特定し、中間テーブルにログインユーザーと本患者のidを結ぶつける必要がある
     
     // userテーブルへの保存
-    $user_data = ['name' => $post['name'], 'email' => 'sample@gmail.com', 'role' => '2'];
+    $user_data = ['name' => $post['name'], 'email' => "{$post['name']}.sample@gmail.com", 'role' => '2', 'password' => 'notauthorized', 'created_at' => now(), 'updated_at' => now()];
     User::insert($user_data);
 
     // patientテーブルへの保存
-    $patient_data = ['user_id' => \Auth::id(), 'name' => $post['name'], 'age' => $post['age'], 'sympton' => $post['sympthon'], 'image' => $request->file('image')->hashName()];    
+    $count_user_table = User::orderby('created_at', 'desc')->first()->id;
+    // $count_user_table = $user->id();
+    $patient_data = ['user_id' => $count_user_table, 'name' => $post['name'], 'age' => $post['age'], 'sympton' => $post['sympthon'], 'image' => $request->file('image')->hashName()];    
     Patient::insert($patient_data);
 
     // dentist_patientテーブル（中間テーブル）への保存
-    $relation_data = ['id' = 
+    $new_Patient_id = Patient::last()->id();
+    $relation_data = ['dentist_id' => \Auth::id(), 'patient_id' => $new_Patient_id];
 
     return redirect('mypatient');
   }
