@@ -13,32 +13,44 @@
 
   @foreach($patients_in_charge as $patient)
 
-    <div class="mypatient-wrapper">
-      <div class="mypatient-wrapper__image-box">
-        <div class="mypatient-wrapper__image-box__circle">
+  <div class="mypatient-wrapper">
+    <div class="mypatient-upper-box">
+      <div class="mypatient-upper-box__image-box">
+        <div class="mypatient-upper-box__image-box__circle">
           <img class="patient_image" src="{{ asset('storage/images/'.$patient->image) }}">
         </div>
       </div>
-      <div class="mypatient-wrapper__name-box">
-        <h4 class="mypatient-wrapper__name-box__name">Patient's name:<br>{{ $patient->name }}</h4>
-        <h5 class="mypatient-wrapper__name-box__age">Age: {{ $patient->age }}</h5>
+      <div class="mypatient-upper-box__name-box">
+        <h4 class="mypatient-upper-box__name-box__name">Patient's name:<br>{{ $patient->name }}</h4>
+        <h5 class="mypatient-upper-box__name-box__age">Age: {{ $patient->age }}</h5>
       </div>
 
-      <div class="mypatient-wrapper__info-box">
-        <h5 class="mypatient-wrapper__info-box__issue-frame">Current issue: {{ $patient->sympton }}<br></h5>
+      <div class="mypatient-upper-box__info-box">
+        <h5 class="mypatient-upper-box__info-box__issue-frame">Current issue: {{ $patient->sympton }}<br></h5>
       </div>
       
-      <div class="mypatient-wrapper__date-box">
-        <h5 class="mypatient-wrapper__date-box__last-date">Last treatment date:</h5>
-        <h5 class="mypatient-wrapper__date-box__last-content">Last treatment:</h5>
-        <h5 class="mypatient-wrapper__date-box__next-date">Next date: </h5>
+      <div class="mypatient-upper-box__date-box">
+        <h5 class="mypatient-upper-box__date-box__last-date">Last treatment date:</h5>
+        <h5 class="mypatient-upper-box__date-box__last-content">Last treatment:</h5>
+        <h5 class="mypatient-upper-box__date-box__next-date">Next date: </h5>
       </div>
 
-      <div class="mypatient-wrapper__message-box">
-        <h5 class="mypatient-wrapper__message-box__notification">！</h5>
-        <h5 class="mypatient-wrapper__message-box__message-link">メッセージを見る</h5>
+      <div class="mypatient-upper-box__message-box">
+        <h5 class="mypatient-upper-box__message-box__notification">！</h5>
+        <h5 class="mypatient-upper-box__message-box__message-link">メッセージを見る</h5>
       </div>
     </div>
+
+    <div class="mypatient-lower-box">
+      <button type="button" class="mypatient-lower-box__edit-button btn btn-primary">
+        Edit
+      </button>
+      <div class="mypatient-lower-box__delete-button btn btn-secondary">
+        Delete
+      </div>
+    </div>
+
+  </div>
 
     @endforeach
 
