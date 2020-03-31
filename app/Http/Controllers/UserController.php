@@ -70,7 +70,13 @@ class UserController extends Controller
     $patient_tobe_updated->save();
 
     $request->file('image')->store('/public/images');
-    
+
+    return redirect('mypatient');
+  }
+
+  public function myPatientDelete(Request $request){
+    $patient_tobe_deleted = Patient::find($request->id);
+    $patient_tobe_deleted->delete();
     return redirect('mypatient');
   }
 

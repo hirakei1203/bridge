@@ -11406,7 +11406,7 @@ template {
 }
 
 .mypatient-lower-box__edit-button {
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .new-patient__create-wrapper {

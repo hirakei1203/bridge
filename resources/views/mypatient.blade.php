@@ -45,9 +45,10 @@
       <button type="button" class="mypatient-lower-box__edit-button btn btn-primary" onclick=location.href="{{ route('mypatient_edit') }}?id={{ $patient->id }}">
         Edit
       </button>
-      <div class="mypatient-lower-box__delete-button btn btn-secondary">
-        Delete
-      </div>
+      <form method="post" action="{{ route('mypatient_delete') }}?id={{ $patient->id }}">
+       {{ csrf_field() }}
+      <input type="submit" value="削除" class="mypatient-lower-box__delete-button btn btn-secondary">
+      </form>
     </div>
 
   </div>
