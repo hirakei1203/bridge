@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\User;
 use App\Patient;
+use App\Dentist;
 // use App\Http\Requests\Request;
 
 class UserController extends Controller
@@ -49,8 +50,12 @@ class UserController extends Controller
     Patient::insert($patient_data);
 
     // dentist_patientテーブル（中間テーブル）への保存
-    $new_Patient_id = Patient::orderby('id', 'desc')->first()->id;
-    $relation_data = ['dentist_id' => \Auth::id(), 'patient_id' => $new_Patient_id];
+    $new_patient = Patient::orderby('id', 'desc')->first();
+    $current_dentist = Dentist::where('user_id', \Auth::id())->first();
+    // $relation_data = ['dentist_id' => \Auth::id(), 'patient_id' => $new_Patient_id];
+    $current_dentist->patient()->attach(['patient_id' => $new_patient->id], 
+                                    ['dentist_id' => $current_dentist->id]);
+    
 
     return redirect('mypatient');
   }

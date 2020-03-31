@@ -12,6 +12,6 @@ class Patient extends Model
     }
 
     public function dentist(){
-        return $this->belongsToMany('App\Patient');
+        return $this->belongsToMany('App\Dentist');
     }
 }
