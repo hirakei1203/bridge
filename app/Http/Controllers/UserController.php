@@ -21,11 +21,10 @@ class UserController extends Controller
 
   public function mypatient(){
 
-    // 作成予定
-    // $mypatients = User::where('user_id' = Auth::id())->get();
-    // return view('index', compact('mypatients'));
+    $current_dentist = Dentist::where('user_id', \Auth::id())->first();
+    $patients_in_charge = $current_dentist->patient;
 
-    return view('mypatient');
+    return view('mypatient', compact('patients_in_charge'));
   }
 
   public function newmypatient(){
