@@ -42,7 +42,7 @@
     </div>
 
     <div class="mypatient-lower-box">
-      <button type="button" class="mypatient-lower-box__edit-button btn btn-primary">
+      <button type="button" class="mypatient-lower-box__edit-button btn btn-primary" onclick=location.href="{{ route('mypatient_edit') }}?id={{ $patient->id }}">
         Edit
       </button>
       <div class="mypatient-lower-box__delete-button btn btn-secondary">

@@ -20,6 +20,7 @@ Auth::routes();
 
 Route::group(['middleware'=>'auth'], function(){
   Route::post('/mypatinet/create', 'UserController@mypatientCreate')->name('mypatient_create');
+  Route::get('/mypatient/edit', 'UserController@myPatientEdit')->name('mypatient_edit');
 });
 
 

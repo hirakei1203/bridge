@@ -54,6 +54,15 @@ class UserController extends Controller
     return redirect('mypatient');
   }
 
+  public function myPatientEdit(Request $request){
+    $patient_tobe_edit = Patient::find($request->id);
+    return view('mypatient_edit', compact('patient_tobe_edit'));
+  }
+
+  public function myPatientUpdate(Request $request){
+    $patient_tobe_updated = Patient::find
+  }
+
 }
 
 ?>
