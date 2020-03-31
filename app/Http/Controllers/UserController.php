@@ -68,6 +68,9 @@ class UserController extends Controller
     }
     $patient_tobe_updated->sympton = $request->sympthon;
     $patient_tobe_updated->save();
+
+    $request->file('image')->store('/public/images');
+    
     return redirect('mypatient');
   }
 
