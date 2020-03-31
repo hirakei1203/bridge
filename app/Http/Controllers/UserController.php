@@ -60,7 +60,15 @@ class UserController extends Controller
   }
 
   public function myPatientUpdate(Request $request){
-    $patient_tobe_updated = Patient::find
+    $patient_tobe_updated = Patient::find($request->id);
+    $patient_tobe_updated->name = $request->name;
+    $patient_tobe_updated->age = $request->age;
+    if(!empty($request->file('image'))){
+      $patient_tobe_updated->image = $request->file('image')->hashName();
+    }
+    $patient_tobe_updated->sympton = $request->sympthon;
+    $patient_tobe_updated->save();
+    return redirect('mypatient');
   }
 
 }
