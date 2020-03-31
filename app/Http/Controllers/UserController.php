@@ -46,7 +46,7 @@ class UserController extends Controller
 
     // patientテーブルへの保存
     $count_user_table = User::orderby('id', 'desc')->first()->id;
-    $patient_data = ['user_id' => $count_user_table, 'name' => $post['name'], 'age' => $post['age'], 'sympton' => $post['sympthon'], 'image' => $request->file('image')->hashName()];    
+    $patient_data = ['user_id' => $count_user_table, 'name' => $post['name'], 'age' => $post['age'], 'sympton' => $post['sympthon'], 'image' => $request->file('image')->hashName(), 'created_at' => now(), 'updated_at' => now()];    
     Patient::insert($patient_data);
 
     // dentist_patientテーブル（中間テーブル）への保存
